@@ -11756,10 +11756,10 @@ For programmers (CN1 in uart-mode):
 <net name="N$27" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="SER"/>
-<pinref part="M1" gate="G$1" pin="G14"/>
-<wire x1="-12.08" y1="-4.8" x2="-30.48" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="-5.08" x2="-30.48" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-2.26" x2="-30.48" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="-30.48" x2="-86.36" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="M1" gate="G$1" pin="G16"/>
+<wire x1="-30.48" y1="-2.26" x2="-12.08" y2="-2.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RCK" class="0">
@@ -11868,10 +11868,10 @@ For programmers (CN1 in uart-mode):
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="M1" gate="G$1" pin="G16"/>
-<wire x1="-12.08" y1="-2.26" x2="-12.08" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-12.08" y1="-2.54" x2="-15.24" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-15.24" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="-20.32" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="M1" gate="G$1" pin="G14"/>
+<wire x1="-12.08" y1="-4.8" x2="-12.08" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-12.08" y1="-5.08" x2="-20.32" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-76.2" y1="-58.42" x2="-71.12" y2="-58.42" width="0.1524" layer="91"/>

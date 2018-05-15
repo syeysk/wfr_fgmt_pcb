@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -2321,15 +2321,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$27">
 <contactref element="IC1" pad="14"/>
-<contactref element="M1" pad="G14"/>
-<wire x1="25.4" y1="25.145" x2="28.575" y2="24.765" width="0.5" layer="16"/>
-<wire x1="28.575" y1="24.765" x2="31.75" y2="27.305" width="0.5" layer="1"/>
+<wire x1="28.575" y1="27.305" x2="31.75" y2="27.305" width="0.5" layer="1"/>
 <wire x1="31.75" y1="27.305" x2="31.75" y2="35.56" width="0.5" layer="1"/>
 <wire x1="31.75" y1="35.56" x2="33.655" y2="37.465" width="0.5" layer="1"/>
 <wire x1="33.655" y1="37.465" x2="34.29" y2="37.465" width="0.5" layer="1"/>
 <wire x1="34.29" y1="37.465" x2="36.2966" y2="37.465" width="0.5" layer="16"/>
 <via x="34.29" y="37.465" extent="1-16" drill="0.35"/>
-<via x="28.575" y="24.765" extent="1-16" drill="0.35"/>
+<via x="28.575" y="27.305" extent="1-16" drill="0.35"/>
+<contactref element="M1" pad="G16"/>
+<wire x1="28.575" y1="27.305" x2="25.56" y2="27.305" width="0.5" layer="16"/>
+<wire x1="25.56" y1="27.305" x2="25.4" y2="27.145" width="0.5" layer="16"/>
 </signal>
 <signal name="RCK">
 <contactref element="IC1" pad="12"/>
@@ -2425,15 +2426,17 @@ design rules under a new name.</description>
 <wire x1="26.64" y1="31.145" x2="25.4" y2="31.145" width="0.5" layer="16"/>
 </signal>
 <signal name="RST">
-<contactref element="M1" pad="G16"/>
 <contactref element="R8" pad="1"/>
 <contactref element="BTN1" pad="2"/>
-<wire x1="25.4" y1="27.145" x2="26.83" y2="27.145" width="0.5" layer="16"/>
-<wire x1="26.83" y1="27.145" x2="27.94" y2="26.035" width="0.5" layer="16"/>
-<via x="27.94" y="26.035" extent="1-16" drill="0.35"/>
-<wire x1="27.94" y1="26.035" x2="25.4" y2="30.607" width="0.5" layer="1"/>
+<wire x1="27.305" y1="26.035" x2="26.67" y2="25.4" width="0.5" layer="16"/>
+<via x="27.305" y="26.035" extent="1-16" drill="0.35"/>
+<wire x1="27.305" y1="26.035" x2="25.4" y2="27.305" width="0.5" layer="1"/>
+<wire x1="25.4" y1="27.305" x2="25.4" y2="30.607" width="0.5" layer="1"/>
 <wire x1="28.36" y1="31.115" x2="27.09" y2="30.52" width="0.5" layer="1"/>
 <wire x1="27.09" y1="30.52" x2="25.4" y2="30.607" width="0.5" layer="1"/>
+<contactref element="M1" pad="G14"/>
+<wire x1="26.67" y1="25.4" x2="25.655" y2="25.4" width="0.5" layer="16"/>
+<wire x1="25.655" y1="25.4" x2="25.4" y2="25.145" width="0.5" layer="16"/>
 </signal>
 <signal name="N$30">
 <contactref element="R10" pad="2"/>
