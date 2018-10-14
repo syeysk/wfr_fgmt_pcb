@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.2">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -77,7 +77,7 @@
 <text x="5.08" y="24.13" size="1.2" layer="27" font="vector" ratio="12">| Boot</text>
 <text x="22.225" y="23.495" size="1.2" layer="27" font="vector" ratio="12" rot="R90">RST sets</text>
 <text x="9.525" y="40.64" size="1.2" layer="27" font="vector" ratio="12">Polyakov Konstantin
-Russia, Yeysk, 2018-04-26, v0.3 rev1</text>
+Russia, Yeysk 2018-04-26 WFR-0-3-1</text>
 <text x="22.225" y="33.655" size="1.27" layer="27" font="vector" ratio="12" rot="R90">Reboot</text>
 <text x="0.635" y="30.48" size="1.2" layer="27" font="vector" ratio="12" rot="SR0">SCL</text>
 <text x="0.635" y="27.94" size="1.2" layer="27" font="vector" ratio="12" rot="SR0">SDA</text>
@@ -1722,6 +1722,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1822,119 +1825,119 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="470p" x="26.67" y="37.465" smashed="yes" rot="MR270">
+<element name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="470p" x="26.67" y="37.465" rot="MR270">
 <attribute name="NAME" x="26.035" y="42.545" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 <attribute name="SPICEMODEL" value="NONE" x="26.67" y="37.465" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="26.67" y="37.465" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="23.495" y="40.64" size="1.27" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="CN1" library="pls" package="PBS-3-VERTICAL" value="PBS-3-VERTICAL" x="1.905" y="26.035" smashed="yes" rot="MR0"/>
-<element name="CN3" library="pls" package="PBS-8-1.27-VERTICAL" value="PBS-8-1.27-VERTICAL" x="46.99" y="21.59" smashed="yes" rot="MR180">
+<element name="CN1" library="pls" package="PBS-3-VERTICAL" value="PBS-3-VERTICAL" x="1.905" y="26.035" rot="MR0"/>
+<element name="CN3" library="pls" package="PBS-8-1.27-VERTICAL" value="PBS-8-1.27-VERTICAL" x="46.99" y="21.59" rot="MR180">
 <attribute name="NAME" x="45.085" y="20.32" size="1.27" layer="22" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="CN4" library="pls" package="PBS-8-1.27-VERTICAL" value="PBS-8-1.27-VERTICAL" x="46.99" y="31.75" smashed="yes" rot="MR180">
+<element name="CN4" library="pls" package="PBS-8-1.27-VERTICAL" value="PBS-8-1.27-VERTICAL" x="46.99" y="31.75" rot="MR180">
 <attribute name="NAME" x="44.45" y="42.545" size="1.27" layer="22" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="CN5" library="pls" package="PBS-2-VERTICAL" value="PBS-2-VERTICAL" x="4.445" y="15.875" smashed="yes" rot="MR90">
+<element name="CN5" library="pls" package="PBS-2-VERTICAL" value="PBS-2-VERTICAL" x="4.445" y="15.875" rot="MR90">
 <attribute name="NAME" x="5.08" y="17.145" size="1.27" layer="22" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="CN6" library="pls" package="PBS-2-VERTICAL" value="PBS-2-VERTICAL" x="5.08" y="28.575" smashed="yes" rot="MR180"/>
-<element name="CN7" library="pls" package="PBS-4-VERTICAL" value="PBS-4-VERTICAL" x="5.08" y="33.655" smashed="yes" rot="MR180"/>
-<element name="IC1" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO16" package3d_urn="urn:adsk.eagle:package:2918/1" value="74LS595D" x="39.37" y="35.56" smashed="yes" rot="MR270">
+<element name="CN6" library="pls" package="PBS-2-VERTICAL" value="PBS-2-VERTICAL" x="5.08" y="28.575" rot="MR180"/>
+<element name="CN7" library="pls" package="PBS-4-VERTICAL" value="PBS-4-VERTICAL" x="5.08" y="33.655" rot="MR180"/>
+<element name="IC1" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO16" package3d_urn="urn:adsk.eagle:package:2918/1" value="74LS595D" x="39.37" y="35.56" rot="MR270">
 <attribute name="VALUE" x="40.005" y="39.624" size="1.27" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="IC2" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO16" package3d_urn="urn:adsk.eagle:package:2918/1" value="74LS595D" x="39.37" y="24.765" smashed="yes" rot="MR270">
+<element name="IC2" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO16" package3d_urn="urn:adsk.eagle:package:2918/1" value="74LS595D" x="39.37" y="24.765" rot="MR270">
 <attribute name="VALUE" x="40.005" y="28.829" size="1.27" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="M1" library="ESP8266-12F" package="ESP8266-12F" value="ESP8266-12F" x="25.4" y="17.145" smashed="yes" rot="MR0">
+<element name="M1" library="ESP8266-12F" package="ESP8266-12F" value="ESP8266-12F" x="25.4" y="17.145" rot="MR0">
 <attribute name="NAME" x="18.84" y="39.135" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="VALUE" x="23.505" y="37.23" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="R1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="6.35" y="20.32" smashed="yes" rot="MR270">
+<element name="R1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="6.35" y="20.32" rot="MR270">
 <attribute name="NAME" x="16.51" y="20.955" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 <attribute name="SPICEMODEL" value="NONE" x="6.35" y="20.32" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="6.35" y="20.32" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="12.065" y="20.955" size="1.27" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="R2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="5.08" y="26.035" smashed="yes" rot="MR0">
+<element name="R2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="5.08" y="26.035" rot="MR0">
 <attribute name="NAME" x="18.415" y="25.4" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="SPICEMODEL" value="NONE" x="5.08" y="26.035" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="5.08" y="26.035" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="14.605" y="25.4" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="R3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="29.21" y="28.575" smashed="yes" rot="MR0">
+<element name="R3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="29.21" y="28.575" rot="MR0">
 <attribute name="NAME" x="33.02" y="27.94" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="SPICEMODEL" value="NONE" x="29.21" y="28.575" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="29.21" y="28.575" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="23.495" y="27.94" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="R4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="29.21" y="37.465" smashed="yes" rot="MR270">
+<element name="R4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="29.21" y="37.465" rot="MR270">
 <attribute name="NAME" x="29.21" y="42.545" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 <attribute name="SPICEMODEL" value="NONE" x="29.21" y="37.465" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="29.21" y="37.465" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="27.94" y="40.64" size="1.27" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="R5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="5.08" y="23.495" smashed="yes" rot="MR0">
+<element name="R5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="5.08" y="23.495" rot="MR0">
 <attribute name="NAME" x="18.415" y="23.495" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="SPICEMODEL" value="NONE" x="5.08" y="23.495" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="5.08" y="23.495" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="14.605" y="23.495" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="R6" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="100K" x="29.21" y="33.655" smashed="yes" rot="MR0">
+<element name="R6" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="100K" x="29.21" y="33.655" rot="MR0">
 <attribute name="NAME" x="33.02" y="33.02" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="SPICEMODEL" value="NONE" x="29.21" y="33.655" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="29.21" y="33.655" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="23.495" y="33.02" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="R7" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="220K" x="29.21" y="31.115" smashed="yes" rot="MR0">
+<element name="R7" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="220K" x="29.21" y="31.115" rot="MR0">
 <attribute name="NAME" x="33.02" y="30.48" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="SPICEMODEL" value="NONE" x="29.21" y="31.115" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="29.21" y="31.115" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="23.495" y="30.48" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="R8" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="29.21" y="31.115" smashed="yes">
+<element name="R8" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="12K" x="29.21" y="31.115">
 <attribute name="NAME" x="31.115" y="31.75" size="1.27" layer="25" font="vector" ratio="12"/>
 <attribute name="SPICEMODEL" value="NONE" x="29.21" y="31.115" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="29.21" y="31.115" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="31.115" y="29.845" size="1.27" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="BTN1" library="btn1" package="BTN-6X4-SMD" value="Reset settings" x="25.4" y="24.13" rot="R90"/>
-<element name="IC3" library="mc34063" package="SOIC8" value="MC34063AD" x="16.51" y="5.08" smashed="yes" rot="MR90">
+<element name="IC3" library="mc34063" package="SOIC8" value="MC34063AD" x="16.51" y="5.08" rot="MR90">
 <attribute name="NAME" x="15.367" y="2.54" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="R9" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="10k" x="15.875" y="11.43" smashed="yes" rot="MR0">
+<element name="R9" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="10k" x="15.875" y="11.43" rot="MR0">
 <attribute name="NAME" x="17.78" y="11.43" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 <attribute name="SPICEMODEL" value="NONE" x="15.875" y="11.43" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="15.875" y="11.43" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="17.78" y="12.7" size="1.27" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="R10" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="5.1k" x="15.875" y="8.89" smashed="yes" rot="MR180">
+<element name="R10" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="5.6k" x="15.875" y="8.89" rot="MR180">
 <attribute name="NAME" x="17.78" y="8.89" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 <attribute name="SPICEMODEL" value="NONE" x="15.875" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="15.875" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="17.78" y="10.16" size="1.27" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="R11" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="0.33" x="21.59" y="5.08" smashed="yes" rot="MR270">
+<element name="R11" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="0.33" x="21.59" y="5.08" rot="MR270">
 <attribute name="NAME" x="19.939" y="3.175" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 <attribute name="SPICEMODEL" value="NONE" x="21.59" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="21.59" y="5.08" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="23.241" y="0.254" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="C3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="470p" x="12.065" y="6.35" smashed="yes" rot="MR90">
+<element name="C3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="470p" x="12.065" y="6.35" rot="MR90">
 <attribute name="NAME" x="13.335" y="8.255" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="SPICEMODEL" value="NONE" x="12.065" y="6.35" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="12.065" y="6.35" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="14.224" y="9.525" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="D/7343-31W" package3d_urn="urn:adsk.eagle:package:25904/1" value="470u" x="6.35" y="12.065" smashed="yes" rot="MR180">
+<element name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="D/7343-31W" package3d_urn="urn:adsk.eagle:package:25904/1" value="470u" x="6.35" y="12.065" rot="MR180">
 <attribute name="NAME" x="15.875" y="13.716" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 <attribute name="VALUE" x="11.43" y="13.716" size="1.27" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="D/7343-31W" package3d_urn="urn:adsk.eagle:package:25904/1" value="100u" x="27.94" y="3.81" smashed="yes" rot="MR0">
+<element name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="D/7343-31W" package3d_urn="urn:adsk.eagle:package:25904/1" value="100u" x="27.94" y="3.81" rot="MR0">
 <attribute name="NAME" x="32.86" y="0.395" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="VALUE" x="29.05" y="0.235" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="D1" library="s2x_10" package="DO214AA" value="S2A" x="8.89" y="5.715" smashed="yes" rot="MR90">
+<element name="D1" library="s2x_10" package="DO214AA" value="S2A" x="8.89" y="5.715" rot="MR90">
 <attribute name="MF" value="Fairchild" x="8.89" y="5.715" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="S2A" x="8.89" y="5.715" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="5.375" y="4.885" size="1.27" layer="26" font="vector" ratio="12" rot="MR90"/>
@@ -1942,18 +1945,18 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="58K2391" x="8.89" y="5.715" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="3.485" y="4.25" size="1.27" layer="28" font="vector" ratio="12" rot="MR90"/>
 </element>
-<element name="CN2" library="pls" package="PBS-2-VERTICAL" value="PBS-2-VERTICAL" x="24.765" y="7.62" smashed="yes" rot="R270">
+<element name="CN2" library="pls" package="PBS-2-VERTICAL" value="PBS-2-VERTICAL" x="24.765" y="7.62" rot="R270">
 <attribute name="NAME" x="26.67" y="6.985" size="1.27" layer="22" font="vector" ratio="12"/>
 </element>
-<element name="L1" library="inductor" package="INDUCTOR-5-10" value="220u" x="5.08" y="8.255" smashed="yes" rot="R270">
+<element name="L1" library="inductor" package="INDUCTOR-5-10" value="220u" x="5.08" y="8.255" rot="R270">
 <attribute name="NAME" x="1.23" y="3.155" size="1.27" layer="26" font="vector" ratio="12" rot="R270"/>
 <attribute name="VALUE" x="1.33" y="8.235" size="1.27" layer="28" font="vector" ratio="12" rot="R270"/>
 </element>
-<element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="CT3216" package3d_urn="urn:adsk.eagle:package:25799/1" value="47u" x="8.255" y="15.24" smashed="yes" rot="MR180">
+<element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="CT3216" package3d_urn="urn:adsk.eagle:package:25799/1" value="47u" x="8.255" y="15.24" rot="MR180">
 <attribute name="NAME" x="11.43" y="15.24" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
 <attribute name="VALUE" x="5.715" y="17.78" size="1.27" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
-<element name="D2" library="s2x_10" package="DO214AA" value="S2A" x="25.4" y="10.795" smashed="yes" rot="MR180">
+<element name="D2" library="s2x_10" package="DO214AA" value="S2A" x="25.4" y="10.795" rot="MR180">
 <attribute name="MF" value="Fairchild" x="25.4" y="10.795" size="1.2" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="S2A" x="25.4" y="10.795" size="1.2" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="27.11" y="14.31" size="1.27" layer="26" font="vector" ratio="12" rot="MR180"/>
@@ -1962,28 +1965,28 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="23.3" y="14.295" size="1.27" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
 <element name="BTN2" library="btn1" package="BTN-6X4-SMD" value="Reboot" x="25.4" y="39.37" rot="R270"/>
-<element name="IC4" library="ds1307_pcf8583" package="SOIC8" value="DS1307Z" x="36.195" y="16.51" smashed="yes">
+<element name="IC4" library="ds1307_pcf8583" package="SOIC8" value="DS1307Z" x="36.195" y="16.51">
 <attribute name="NAME" x="33.02" y="15.24" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
 </element>
-<element name="R12" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="10K" x="2.54" y="28.575" smashed="yes" rot="MR0">
+<element name="R12" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="10K" x="2.54" y="28.575" rot="MR0">
 <attribute name="NAME" x="18.415" y="27.94" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="SPICEMODEL" value="NONE" x="2.54" y="28.575" size="1.2" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="2.54" y="28.575" size="1.2" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="14.605" y="27.94" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="R13" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="10K" x="2.54" y="31.115" smashed="yes" rot="MR0">
+<element name="R13" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="10K" x="2.54" y="31.115" rot="MR0">
 <attribute name="NAME" x="18.415" y="30.48" size="1.27" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="SPICEMODEL" value="NONE" x="2.54" y="31.115" size="1.2" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="2.54" y="31.115" size="1.2" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="14.605" y="30.48" size="1.27" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="R14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="3.3K" x="34.925" y="21.59" smashed="yes" rot="R180">
+<element name="R14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="3.3K" x="34.925" y="21.59" rot="R180">
 <attribute name="NAME" x="39.37" y="24.13" size="1.27" layer="25" font="vector" ratio="12" rot="R180"/>
 <attribute name="SPICEMODEL" value="NONE" x="34.925" y="21.59" size="1.2" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="34.925" y="21.59" size="1.2" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="40.005" y="22.225" size="1.27" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
-<element name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" package="TC38H" package3d_urn="urn:adsk.eagle:package:12087/1" value="32.768K" x="36.195" y="10.795" smashed="yes" rot="R180">
+<element name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" package="TC38H" package3d_urn="urn:adsk.eagle:package:12087/1" value="32.768K" x="36.195" y="10.795" rot="R180">
 <attribute name="MF" value="" x="36.195" y="10.795" size="1.2" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="36.195" y="10.795" size="1.2" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="38.1" y="8.763" size="1.27" layer="25" font="vector" ratio="12" rot="R270"/>
@@ -1991,7 +1994,7 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="36.195" y="10.795" size="1.2" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="33.02" y="8.763" size="1.27" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
-<element name="G1" library="battery" library_urn="urn:adsk.eagle:library:109" package="CR2032V" package3d_urn="urn:adsk.eagle:package:4578/1" value="CR2032V" x="43.815" y="10.16" smashed="yes">
+<element name="G1" library="battery" library_urn="urn:adsk.eagle:library:109" package="CR2032V" package3d_urn="urn:adsk.eagle:package:4578/1" value="CR2032V" x="43.815" y="10.16">
 <attribute name="NAME" x="47.879" y="12.7" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
 <attribute name="VALUE" x="48.514" y="1.143" size="1.27" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
@@ -2522,6 +2525,13 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="12.7" x2="36.83" y2="13.91" width="0.5" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
